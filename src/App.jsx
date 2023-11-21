@@ -5,11 +5,21 @@ import Card from './components/Card'
 
 const App = () => { // This is also a functional component
   console.log("APP is mounted");
-
+  const arrayOfLi = ["Rick", "Morty", "Sam"]
 
   return (
     <>
-      <Card />
+      <ul>
+        {arrayOfLi.map((dittoName, dittoIndex) => {
+          return (
+            <li key={dittoIndex}>
+              <h1>{dittoName}</h1>
+              <p >{dittoName}</p>
+            </li>
+          )
+        })}
+      </ul>
+      {/* <Card /> */}
     </>
   )
 }
