@@ -4,7 +4,7 @@ import Card from './components/Card'
 
 
 const App = () => { // This is also a functional component
-
+  console.log("APP is mounted");
 
 
   return (
